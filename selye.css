@@ -1727,7 +1727,7 @@ footer .container .sec p {
     top: 30px;
     position: relative;
     color: #fff;
-    left: 80px;
+    left: 70px;
 }
 
 .semi-transparent-pa {
@@ -1943,12 +1943,19 @@ footer .container .sec p {
         background: #fff;
         background: rgba(255, 255, 255, 0.3);
         border-radius: 99px;
-        padding: 20px;
+        padding: 00px;
         /* margin-left: 0px; */
         /* margin: auto; */
         /* padding-left: 20px; */
         /* justify-items: baseline; */
         padding-bottom: 70px;
+    }
+    
+    .borders-pa {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 15px;
+        overflow: hidden;
     }
 }
 @media screen and (min-width:300px) and (max-width:1026px) {
@@ -1981,4 +1988,81 @@ footer .container .sec p {
         position: relative;
     }
     
+}
+
+.semi-transparent-un-1 {
+    box-sizing: border-box;
+    background: #fff;
+    /* fallback color for old browsers */
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 99px;
+    padding: 43px;
+}
+@media screen and (min-width:300px) and (max-width:1026px) {
+    
+    .semi-transparent-un-1 {
+        box-sizing: border-box;
+        /* fallback color for old browsers */
+        background: none;
+        border-radius: 0px;
+        padding: 0px;
+    }
+    .a-edit {   
+        position: relative;
+        left: 24px;
+    }
+    
+    .filter-wrapper-sc-1 {
+        margin: auto;
+        position: relative;
+        display: flex;
+        border-radius: 30px;
+        margin-bottom: 35px;
+        width: 0;
+        padding-right: 20px;
+        right: 122px;
+        top: 23px;
+    }
+    
+    .search-bar {
+        padding-left: 39px;
+        right: -32px;
+        position: relative;
+        border: none;
+        box-sizing: border-box;
+        background: #fff;
+        /* fallback color for old browsers */
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 99px;
+        width: 170px;
+        border: 2px solid #448bc6
+    }
+    
+    button[type="submit"]:hover {
+        background-color: #448bc6;
+        width: 72px;
+        height: 36px;
+        color: #fff;
+    }
+
+    button[type="submit"] {
+        background-color: #eff2ff;
+        color: #000000;
+        border: none;
+        width: 70px;
+        height: 36px;
+        border-radius: 6px;
+        cursor: pointer;
+        border-radius: 60px;
+        transition: 0.15s;
+        font-size: 17px;
+    }
+    .ar-im {
+        max-width: 1050px;
+        width: 90%;
+        border-radius: inherit;
+        position: relative;
+        left: 5%;
+        top: 36px;
+    }
 }
