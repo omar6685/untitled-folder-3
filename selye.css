@@ -2093,3 +2093,11 @@ footer .container .sec p {
     transform: translateY(0);
     opacity: 1;
   }
+  .co-us {
+
+    /* margin: auto; */
+    position: relative;
+    left: 77px;
+    top: 20px;
+    padding-right: 92px
+  }
