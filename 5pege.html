@@ -85,8 +85,8 @@
                                 </form>
                             </div>
                         </div>
-                        <div class=" container4 semi-transparent-un" id="un">
-                            <a class="a-edit" href="#">
+                        <div class=" container4 semi-transparent-un reveal" id="un">
+                            <a class="a-edit hover" href="#">
                                 <div class="inherit">
                                     <div class="box-d-3-un">
                                     </div>
@@ -100,7 +100,7 @@
 
 
 
-                            <a class="a-edit" href="#">
+                            <a class="a-edit hover" href="#">
                                 <div class="inherit">
                                     <div class="box-d-3-un">
                                     </div>
@@ -112,7 +112,7 @@
                                 </div>
                             </a>
 
-                            <a class="a-edit" href="#">
+                            <a class="a-edit hover" href="#">
                                 <div class="inherit">
                                     <div class="box-d-3-un">
                                     </div>
@@ -124,20 +124,7 @@
                                 </div>
                             </a>
 
-                            <a class="a-edit" href="#">
-                                <div class="inherit">
-                                    <div class="box-d-3-un">
-                                    </div>
-                                    <div class="box-d-2-un grid">
-                                        <span class="text-un-1">Ankara Medipol Üniversitesi</span>
-                                        <span class="text-un-2">read more</span>
-                                    </div>
-                                    <div class=""><img class="image-d-un" src="imges/uni.jpg" alt=""></div>
-                                </div>
-                            </a>
-
-
-                            <a class="a-edit" href="#">
+                            <a class="a-edit hover" href="#">
                                 <div class="inherit">
                                     <div class="box-d-3-un">
                                     </div>
@@ -150,7 +137,7 @@
                             </a>
 
 
-                            <a class="a-edit" href="#">
+                            <a class="a-edit hover" href="#">
                                 <div class="inherit">
                                     <div class="box-d-3-un">
                                     </div>
@@ -163,7 +150,20 @@
                             </a>
 
 
-                            <a class="a-edit" href="#">
+                            <a class="a-edit hover" href="#">
+                                <div class="inherit">
+                                    <div class="box-d-3-un">
+                                    </div>
+                                    <div class="box-d-2-un grid">
+                                        <span class="text-un-1">Ankara Medipol Üniversitesi</span>
+                                        <span class="text-un-2">read more</span>
+                                    </div>
+                                    <div class=""><img class="image-d-un" src="imges/uni.jpg" alt=""></div>
+                                </div>
+                            </a>
+
+
+                            <a class="a-edit hover" href="#">
                                 <div class="inherit">
                                     <div class="box-d-3-un">
                                     </div>
@@ -177,7 +177,7 @@
 
 
 
-                            <a class="a-edit" href="#">
+                            <a class="a-edit hover" href="#">
                                 <div class="inherit">
                                     <div class="box-d-3-un">
                                     </div>
@@ -189,7 +189,7 @@
                                 </div>
                             </a>
 
-                            <a class="a-edit" href="#">
+                            <a class="a-edit hover" href="#">
                                 <div class="inherit">
                                     <div class="box-d-3-un">
                                     </div>
@@ -255,6 +255,28 @@
         </div>
     </footer>
 
+    <script>
+    
+        function reveal() {
+                 var reveals = document.querySelectorAll(".reveal");
+    
+                 for (var i = 0; i < reveals.length; i++) {
+                   var windowHeight = window.innerHeight;
+                   var elementTop = reveals[i].getBoundingClientRect().top;
+                   var elementVisible = 150;
+    
+                   if (elementTop < windowHeight - elementVisible) {
+                     reveals[i].classList.add("active");
+                   } else {
+                     reveals[i].classList.remove("active");
+                   }
+                 }
+               }
+    
+               window.addEventListener("scroll", reveal);
+    
+    
+    </script>
 </body>
 
 </html>
